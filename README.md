@@ -19,8 +19,7 @@ _Utilitzing the above technologies, this project will demonstrate the use of obj
 
 If below link isnt working; the backup method will be cloning repository to local repository:
 
-* Github repository: 
-* Github pages: 
+* Github repository: https://github.com/Magofna68/Pizza-Parlor
 
 * _Go to Github and navigate to main page of repository you wish to clone_
 * _Above the list of files, click the green "code" button, and select the clipboard to copy URL under "clone with https"_
@@ -65,9 +64,6 @@ Test: "Toppings should be interchangable between fields while still correctly re
 Code:
 pizzaEx(jeff, medium, deep-dish, marinara,_____, olives, ______)
 Expected Output: $14
-
-
-
 
 
 ## Known Bugs
