@@ -12,36 +12,45 @@
 <body id="background">
   <div class="container">
     <h1>Welcome to the Pizza Parlor:</h1>
-    <form class="form-control">
-      <h2 id="test">We have EVERYTHING
-        <p class="font-color">Fill out the form below, and your pizza should be completed within the hour.</p>
+    <h2 id="test">We have EVERYTHING!
+      <p class="font-color">Fill out the form below, and your pizza should be completed within the hour.</p>
+      <p id="smaller">**Disclaimer:** <br>Our specialty lies in our creation of pizza. Due to past inconveniences,
+        <strong>if you do not
+          want up to 3 toppings</strong>, please fill out any unwanted <em>topping's section</em> with "none".<br>
+        <br>Thanks,<br>Management
+      </p>
+      <form id="new-pizza">
+        <div>
+          <label for="name">Name for Order:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
         <div>
           <label for="size">Size:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="size">
         </div>
         <div>
           <label for="crust">Crust:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="crust">
         </div>
         <div>
           <label for="sauce">Sauce:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="sauce">
         </div>
         <div>
           <label for="first-topping">First Topping:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="topping1">
         </div>
         <div>
           <label for="second-topping">Second Topping:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="topping2">
         </div>
         <div>
           <label for="third-topping">Third Topping:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" id="topping3">
         </div>
-    </form>
-    <br>
-    <button type="button" class="btn btn-success">Submit Order!</button>
+      </form>
+      <br>
+      <button type="button" class="btn btn-success" id="btnTotal">Submit Order!</button>
   </div>
 </body>
 

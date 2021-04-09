@@ -14,3 +14,9 @@
 .font-color {
   color: white;
 }
+
+#smaller {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+}
