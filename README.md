@@ -61,6 +61,11 @@ Code:
 pizzaEx(Jeff, medium, deep-dish, marinara, pepperoni, olives, bacon)
 Expected Output: $22
 
+Test: "Toppings should be interchangable between fields while still correctly reflecting price"
+Code:
+pizzaEx(jeff, medium, deep-dish, marinara,_____, olives, ______)
+Expected Output: $14
+
 
 
 
