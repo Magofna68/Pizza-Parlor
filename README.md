@@ -33,31 +33,6 @@ If below link isnt working; the backup method will be cloning repository to loca
 
 * _Describe: indexNumber()_
 
-<!-- Test: "It should return an array with a 0 if the number 0 is inputted"
-Code: indexNumber(0);
-Expected Output: 0_
-
-Test: "It should return values of '1, 2, & 3' with "beep!", "boop!" & "Wont you be my neighbor?"
-Code: 
-indexNumber(3)
-Expected Output: 0, 1, 2, Wont you be my neighbor?
-
-Test: "It should return a string of numbers up till the inputed number and reflect corresponding values"
-Code:
-indexNumber(3)
-Expected Output: 0, "beep!", "boop!", "Wont you be my neighbor"
-
-Test: "The value of '2' should override value of '1'" 
-Code: indexNumber(12)
-Expected Output:
-0,Beep!,Boop!,Wont you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!
-
-Test: "value of a '3' should override the value of '1 & 2'"
-Code:
-indexNumber(13)
-Expected Output: 
-0,Beep!,Boop!,Wont you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!,Wont you be my neighbor? -->
-
 
 
 ## Known Bugs
