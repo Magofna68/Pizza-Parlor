@@ -20,3 +20,7 @@
   color: #6c757d;
   text-align: left;
 }
+#receipt p {
+  color: white;
+  font-size: x-large;
+}

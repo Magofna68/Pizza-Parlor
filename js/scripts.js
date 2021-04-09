@@ -12,7 +12,6 @@ function Pizza(name, size, crust, sauce, topping1, topping2, topping3) {
   this.price = 0;
 }
 Pizza.prototype.priceTotal = function () {
-  debugger
   var top3 = this.topping3;
   var top2 = this.topping2;
   var top1 = this.topping1;
@@ -28,6 +27,7 @@ Pizza.prototype.priceTotal = function () {
     totalPrice = basePrice;
   }
   Pizza.price = totalPrice;
+  return totalPrice;
 }
 
 // function Order(name) {
@@ -65,15 +65,18 @@ $(document).ready(function () {
     const inputtedTopping2 = $("input#topping2").val();
     const inputtedTopping3 = $("input#topping3").val();
     let createdPizza = new Pizza(inputtedName, inputtedSize, inputtedCrust, inputtedSauce, inputtedTopping1, inputtedTopping2, inputtedTopping3);
-    createdPizza.priceTotal()
-    $("ul#show-cost").show(Pizza.price)
+    createdPizza.priceTotal();
+    var total = createdPizza.priceTotal();
+    console.log(total);
+    $(".price").text(total);
+    $("#receipt").show();
+
+    $("input#name").val("");
+    $("input#size").val("");
+    $("input#crust").val("");
+    $("input#sauce").val("");
+    $("input#topping1").val("");
+    $("input#topping2").val("");
+    $("input#topping3").val("");
   });
 });
-
-// $("input#name").val("");
-// $("input#size").val("");
-// $("input#crust").val("");
-// $("input#sauce").val("");
-// $("input#topping1").val("");
-// $("input#topping2").val("");
-// $("input#topping3").val("");
