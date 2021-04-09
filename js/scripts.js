@@ -1,6 +1,5 @@
 // -------------------------- Business Logic -------------------------
-// var inputtedTopping3 = document.getElementById("#topping3").val();
-debugger
+
 function Pizza(name, size, crust, sauce, topping1, topping2, topping3) {
   this.name = name;
   this.size = size;
@@ -12,15 +11,23 @@ function Pizza(name, size, crust, sauce, topping1, topping2, topping3) {
   this.price = 0;
 }
 Pizza.prototype.priceTotal = function () {
-  var top3 = this.topping3;
-  var top2 = this.topping2;
-  var top1 = this.topping1;
+  let top3 = this.topping3;
+  let top2 = this.topping2;
+  let top1 = this.topping1;
   const basePrice = 10;
   let totalPrice = 0;
-  if (top3 != "") {
+  if (top3 != "" && top2 != "" && top1 != "") {
     totalPrice = basePrice + 12;
-  } else if (top2 != "") {
+  } else if (top2 != "" && top1 != "") {
     totalPrice = basePrice + 8;
+  } else if (top3 != "" && top1 != "") {
+    totalPrice = basePrice + 8;
+  } else if (top3 != "" && top2 != "") {
+    totalPrice = basePrice + 8;
+  } else if (top3 != "") {
+    totalPrice = basePrice + 4;
+  } else if (top2 != "") {
+    totalPrice = basePrice + 4;
   } else if (top1 != "") {
     totalPrice = basePrice + 4;
   } else {

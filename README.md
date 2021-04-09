@@ -31,7 +31,37 @@ If below link isnt working; the backup method will be cloning repository to loca
 
 ## Specs
 
-* _Describe: indexNumber()_
+* _Describe: Pizza()_
+
+Test: "Should be able to create an object with up to 3 toppings"
+Code: 
+new Pizza(name, size, crust, sauce, topping1, topping2, topping3)
+Expected Output:
+example(jeff, Medium, deep-dish, marinara, pepperoni, olives, bacon)
+
+Describe: Pizza.prototype.priceTotal
+
+Test: "No toppings should be equal to $10"
+Code:
+pizzaEx(jeff, medium, deep-dish, marinara)
+Expected Output: $10
+
+Test: "One topping should be equal to $14"
+Code:
+pizzaEx(jeff, medium, deep-dish, marinara, pepperoni)
+Expected Output: $14
+
+Test: "Two toppings should be equal to $18"
+Code:
+pizzaEx(Jeff, medium, deep-dish, marinara, pepperoni, olives)
+Expected Output: $18
+
+Test: "Three toppings should be equal to $22"
+Code:
+pizzaEx(Jeff, medium, deep-dish, marinara, pepperoni, olives, bacon)
+Expected Output: $22
+
+
 
 
 
