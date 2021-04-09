@@ -37,26 +37,6 @@ Pizza.prototype.priceTotal = function () {
   return totalPrice;
 }
 
-// function Order(name) {
-//   this.name = name;
-//   this.numberId = 0;
-// }
-
-// function newOrder() {
-//   let order1 = new Order();
-
-// // Pizza.prototype.addName = function (name) {
-// //   this.name[Pizza.name] = name;
-// }
-// Pizza.prototype.pizzaPrice = function () {
-//   pizza.addCost(pizza)
-//   return createdPizza
-// };
-
-// // Pizza.prototype.assignId = function () {
-// //   this.currentId += 1;
-// //   return this.currentId;
-// }
 // --------------------------- UI Logic ------------------------------
 
 
