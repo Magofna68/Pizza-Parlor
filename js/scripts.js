@@ -33,8 +33,7 @@ Pizza.prototype.priceTotal = function () {
   } else {
     totalPrice = basePrice;
   }
-  Pizza.price = totalPrice;
-  return totalPrice;
+  this.price = totalPrice;
 }
 
 // --------------------------- UI Logic ------------------------------
@@ -42,7 +41,7 @@ Pizza.prototype.priceTotal = function () {
 
 $(document).ready(function () {
   $("form#new-pizza").submit(function (event) {
-    event.preventDefault(); debugger
+    event.preventDefault();
 
     const inputtedName = $("input#name").val();
     const inputtedSize = $("input#size").val();
@@ -53,9 +52,7 @@ $(document).ready(function () {
     const inputtedTopping3 = $("input#topping3").val();
     let createdPizza = new Pizza(inputtedName, inputtedSize, inputtedCrust, inputtedSauce, inputtedTopping1, inputtedTopping2, inputtedTopping3);
     createdPizza.priceTotal();
-    var total = createdPizza.priceTotal();
-    console.log(total);
-    $(".price").text(total);
+    $(".price").text(createdPizza.price);
     $("#receipt").show();
 
     $("input#name").val("");
